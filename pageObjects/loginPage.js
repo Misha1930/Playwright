@@ -17,8 +17,9 @@ class LoginPage extends HomePage{
             await this.passwordField.fill(password);
             await this.submitButton.click();
             const response = await this.page.waitForResponse(response => response.status()=== 400 || response.status ===200);
-
+            return response;
         }
+    
     }
     
 
