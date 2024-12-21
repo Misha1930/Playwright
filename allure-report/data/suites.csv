@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","291","Delete endpoint","ApiTest","Sat Dec 14 15:55:37 MSK 2024","passed","Sat Dec 14 15:55:37 MSK 2024","","Api_test.spec.js","",""
+"","278","Post endpoint","ApiTest","Sat Dec 14 15:55:36 MSK 2024","passed","Sat Dec 14 15:55:37 MSK 2024","","Api_test.spec.js","",""
+"","306","Put endpoint","ApiTest","Sat Dec 14 15:55:37 MSK 2024","passed","Sat Dec 14 15:55:37 MSK 2024","","Api_test.spec.js","",""
+"","2021","Get endpoint","ApiTest","Sat Dec 14 15:55:34 MSK 2024","passed","Sat Dec 14 15:55:36 MSK 2024","","Api_test.spec.js","",""
+"","31887","Login page test","onliner","Sat Dec 14 16:13:52 MSK 2024","broken","Sat Dec 14 16:14:24 MSK 2024","","onliner.spec.js","",""
