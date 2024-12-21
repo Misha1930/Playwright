@@ -1,3 +1,4 @@
+const { url } = require("inspector");
 const HomePage = require("./homePage")
 
 class LoginPage extends HomePage{
@@ -10,13 +11,13 @@ class LoginPage extends HomePage{
         this.submitButton = page.locator('.auth-button.auth-button_subsidiary');
         
     }
-        async login(login, password) {
+        async login(login, password, url) {
             await this.loginField.click();
             await this.loginField.type(login);
             await this.passwordField.click();
             await this.passwordField.fill(password);
             await this.submitButton.click();
-            await this.navigate()
+            await this.navigate(url)
         }
     
     }
