@@ -17,7 +17,7 @@ class LoginPage extends HomePage{
             await this.passwordField.click();
             await this.passwordField.fill(password);
             await this.submitButton.click();
-            await this.navigate(url)
+            await this.navigate(url);
         }
     
     }

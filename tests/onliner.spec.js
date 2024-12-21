@@ -21,7 +21,6 @@ test ("Login page test", async({page}) => {
             await homePage.navigate('https://www.onliner.by/');
             await expect(page).toHaveTitle(/Onlíner/);
             await homePage.loginButtonClick();
-            await loginPage.login('Arnold', 'Password1');
             const response = await loginPage.login('Arnold', 'Password1', 'https://www.onliner.by/');
             expect(response.status()).toBe(400)
 
