@@ -22,9 +22,7 @@ test ("Login page test", async({page}) => {
             await expect(page).toHaveTitle(/Onlíner/);
             await homePage.loginButtonClick();
             await loginPage.login('Arnold', 'Password1');
-            const response = await loginPage.login('Arnold', 'Password1');
-            expect(response.status()).toBe(400)
-            //const errorMessage = page.locator('//*[@id="auth-container"]/div/div[2]/div/form/div[3]/div',{timeout:10000})
-           //await expect(errorMessage).toHaveText('Неверный логин или пароль')
+            const errorMessage = page.locator('//*[@id="auth-container"]/div/div[2]/div/form/div[3]/div').textContent()
+            expect(errorMessage).toContain('Неверный логин или пароль')
         })
     
