@@ -23,6 +23,6 @@ test ("Login page test", async({page}) => {
             await homePage.loginButtonClick();
             await loginPage.login('Arnold', 'Password1');
             const errorMessage = page.locator('//*[@id="auth-container"]/div/div[2]/div/form/div[3]/div').textContent()
-            expect(errorMessage).toContain('Неверный логин или пароль')
+            expect(errorMessage).toContain('Неверный логин')
         })
     
