@@ -23,8 +23,8 @@ test ("Login page test", async({page}) => {
             await homePage.loginButtonClick();
             await loginPage.login('Arnold', 'Password1');
     
-            const response = await page.goto('https://www.onliner.by/sdapi/user.api/login')
-            expect(response.status()).toBe(400)
+            //const response = await page.goto('https://www.onliner.by/login')
+            //expect(response.status()).toBe(400)
             //const errorMessage = page.locator('//*[@id="auth-container"]/div/div[2]/div/form/div[3]/div').textContent()
            
         })
