@@ -1,1 +1,0 @@
-{ name: 'Micki', job: 'Barber', updatedAt: '2024-12-14T12:55:24.090Z' }

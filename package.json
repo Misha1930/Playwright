@@ -4,8 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "test:onliner": "npx playwright test --project onliner",
-    "test:Api": "npx playwright test --project ApiTest"
+    "test:21vek": "npx playwright test --project 21vek",
+    "test:storage":"npx playwright test --project storage",
+    "test:Get": "npx playwright test --project GET_pop",
+    "test:Post": "npx playwright test --project POST_prod"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +17,9 @@
     "@playwright/test": "^1.48.2",
     "@types/node": "^22.9.0",
     "allure-playwright": "^3.0.7"
+  },
+  "dependencies": {
+    "json-schema-library": "^10.0.0-rc7",
+    "jsonschema": "^1.4.1"
   }
 }

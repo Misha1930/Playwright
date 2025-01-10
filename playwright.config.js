@@ -52,16 +52,26 @@ module.exports = defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
-    
     {
-      name: 'onliner',
+      name: 'storage',
       use: { ...devices['Desktop Chrome'] },
-      testMatch:'onliner.spec.js',
+      testMatch:'storage.spec.js',
     },
     {
-      name: 'ApiTest',
+      name: '21vek',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch:'login_21vek.spec.js',
+    },
+
+    {
+      name: 'GET_pop',
       use: { ...devices['Desktop Firefox'] },
-      testMatch:'Api_test.spec.js'
+      testMatch:'GET_pop.spec.js'
+    },
+    {
+      name: 'POST_prod',
+      use: { ...devices['Desktop Firefox'] },
+      testMatch:'POST_prod.spec.js'
     }
     /* Test against mobile viewports. */
     // {
